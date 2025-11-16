@@ -1,0 +1,200 @@
+{
+  "config": {
+    "configFile": "D:\\Web Automation\\playwright-lambdatest-assignment\\playwright-lambdatest-assignment\\playwright.config.ts",
+    "rootDir": "D:/Web Automation/playwright-lambdatest-assignment/playwright-lambdatest-assignment/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "D:/Web Automation/playwright-lambdatest-assignment/playwright-lambdatest-assignment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "D:/Web Automation/playwright-lambdatest-assignment/playwright-lambdatest-assignment/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      },
+      {
+        "outputDir": "D:/Web Automation/playwright-lambdatest-assignment/playwright-lambdatest-assignment/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "firefox",
+        "name": "firefox",
+        "testDir": "D:/Web Automation/playwright-lambdatest-assignment/playwright-lambdatest-assignment/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 60000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.56.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "simpleForm.test.ts",
+      "file": "simpleForm.test.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "Simple Form Demo Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "passed",
+                  "duration": 1995,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-16T11:55:04.796Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Web Automation\\playwright-lambdatest-assignment\\playwright-lambdatest-assignment\\test-results\\simpleForm-Simple-Form-Demo-Test-chromium\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Web Automation\\playwright-lambdatest-assignment\\playwright-lambdatest-assignment\\test-results\\simpleForm-Simple-Form-Demo-Test-chromium\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Web Automation\\playwright-lambdatest-assignment\\playwright-lambdatest-assignment\\test-results\\simpleForm-Simple-Form-Demo-Test-chromium\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd51e79f4d3d38026adf-550b01ac256a09fbd1ac",
+          "file": "simpleForm.test.ts",
+          "line": 3,
+          "column": 5
+        },
+        {
+          "title": "Simple Form Demo Test",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "firefox",
+              "projectName": "firefox",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "parallelIndex": 1,
+                  "status": "passed",
+                  "duration": 4273,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2025-11-16T11:55:04.810Z",
+                  "annotations": [],
+                  "attachments": [
+                    {
+                      "name": "screenshot",
+                      "contentType": "image/png",
+                      "path": "D:\\Web Automation\\playwright-lambdatest-assignment\\playwright-lambdatest-assignment\\test-results\\simpleForm-Simple-Form-Demo-Test-firefox\\test-finished-1.png"
+                    },
+                    {
+                      "name": "video",
+                      "contentType": "video/webm",
+                      "path": "D:\\Web Automation\\playwright-lambdatest-assignment\\playwright-lambdatest-assignment\\test-results\\simpleForm-Simple-Form-Demo-Test-firefox\\video.webm"
+                    },
+                    {
+                      "name": "trace",
+                      "contentType": "application/zip",
+                      "path": "D:\\Web Automation\\playwright-lambdatest-assignment\\playwright-lambdatest-assignment\\test-results\\simpleForm-Simple-Form-Demo-Test-firefox\\trace.zip"
+                    }
+                  ]
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "cd51e79f4d3d38026adf-046b6ee10dbef8d0b9cf",
+          "file": "simpleForm.test.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-11-16T11:55:03.958Z",
+    "duration": 6629.205,
+    "expected": 2,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}

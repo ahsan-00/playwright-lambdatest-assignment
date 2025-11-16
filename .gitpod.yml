@@ -1,0 +1,17 @@
+image: gitpod/workspace-full
+
+tasks:
+  - init: |
+      echo "Setting up Playwright environment..."
+      npm install
+      npx playwright install
+    command: |
+      echo "Environment ready! Run tests with: npm run test:lambda"
+
+vscode:
+  extensions:
+    - ms-playwright.playwright
+
+ports:
+  - port: 9323
+    onOpen: open-preview

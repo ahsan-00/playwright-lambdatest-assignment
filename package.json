@@ -1,0 +1,23 @@
+{
+  "name": "playwright-lambdatest-assignment",
+  "version": "1.0.0",
+  "description": "LambdaTest Playwright 101 Assignment",
+  "scripts": {
+    "test": "npx playwright test",
+    "test:headed": "npx playwright test --headed",
+    "test:debug": "npx playwright test --debug",
+    "test:ui": "npx playwright test --ui",
+    "test:lambda:quick": "npx playwright test tests/simpleForm.test.ts --config=lambdatest-quick.config.ts",
+    "test:lambda:all": "npx playwright test tests/ --config=lambdatest-quick.config.ts",
+    "test:lambda:simple": "npx playwright test tests/simpleForm.test.ts --config=lambdatest-quick.config.ts",
+    "test:lambda:slider": "npx playwright test tests/slider.test.ts --config=lambdatest-quick.config.ts",
+    "test:lambda:form": "npx playwright test tests/inputForm.test.ts --config=lambdatest-quick.config.ts",
+    "test:lambda:parallel": "npx playwright test tests/ --config=lambdatest.config.ts"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^24.10.1",
+    "dotenv": "^17.2.3",
+    "playwright": "^1.40.0"
+  }
+}
